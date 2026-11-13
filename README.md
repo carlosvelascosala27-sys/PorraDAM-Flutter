@@ -1,17 +1,44 @@
-# porra_dam
+# Porra DAM ⚽ · Flutter
 
-A new Flutter project.
+App para hacer una porra de los partidos de liga entre la clase.
+Cada jornada, cada persona pronostica el resultado de los partidos; cuando se juegan,
+la app compara los pronósticos con los resultados reales, reparte puntos y ordena una clasificación.
+No hay dinero de por medio: solo puntos.
 
-## Getting Started
+Microproyecto transversal del módulo **Programación Multimedia y Dispositivos Móviles (PMDM)** · 2º DAM · curso 2026-2027.
 
-This project is a starting point for a Flutter application.
+## Pantallas
 
-A few resources to get you started if this is your first Flutter project:
+| Pantalla | Qué muestra |
+|---|---|
+| Bienvenida | Alias del jugador y código del grupo para entrar en la porra |
+| Jornada | Los partidos de la jornada con un selector de marcador para cada equipo |
+| Resultados | Resultados oficiales frente a tu pronóstico, con los puntos de cada partido |
+| Clasificación | Ranking de toda la clase, con tu posición resaltada |
+| Perfil | Tus datos en la porra |
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## Reglas del juego
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Resultado exacto: **8 puntos**.
+- Si no es exacto: **+2** por acertar el 1X2 (quién gana o si es empate) y **+2** por cada equipo cuyos goles se acierten.
+
+## Estructura del proyecto
+
+Organizado por funcionalidades (*feature-first*):
+lib/
+├── main.dart
+└── features/
+├── bienvenida/
+├── principal/ # Scaffold con la barra de navegación inferior
+├── jornada/
+├── resultados/
+├── clasificacion/
+└── perfil/
+assets/
+├── fonts/
+└── images/ # fondo y escudos de los equipos
+
+## Tecnologías
+Flutter
+Dart
+Material Design
