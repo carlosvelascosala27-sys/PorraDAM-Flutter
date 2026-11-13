@@ -5,7 +5,7 @@ Cada jornada, cada persona pronostica el resultado de los partidos; cuando se ju
 la app compara los pronósticos con los resultados reales, reparte puntos y ordena una clasificación.
 No hay dinero de por medio: solo puntos.
 
-Microproyecto transversal del módulo **Programación Multimedia y Dispositivos Móviles (PMDM)** · 2º DAM · curso 2026-2027.
+Microproyecto transversal del módulo **Sistemas de Gestión Empresarial** · 2º DAM · curso 2026-2027.
 
 ## Pantallas
 
