@@ -4,6 +4,8 @@ import 'dart:ui';
 
 import 'package:porra_dam/features/jornada/jornada_screen.dart';
 import 'package:porra_dam/features/resultados/resultados_screen.dart';
+import 'package:porra_dam/features/clasificacion/clasificacion_screen.dart';
+import 'package:porra_dam/features/perfil/perfil_screen.dart';
 
 class PantallaPrincipal extends StatefulWidget {
   const PantallaPrincipal({super.key});
@@ -19,8 +21,8 @@ class _PantallaPrincipalState extends State<PantallaPrincipal> {
   final List<Widget> _pantallas = [
     const JornadaScreen(),
     const ResultadosScreen(),
-    const Center(child: Text('CLASIFICACIÓN')),
-    const Center(child: Text('PERFIL')),
+    const ClasificacionScreen(),
+    const PerfilScreen(),
   ];
 
   void _cambiar(int index) {
