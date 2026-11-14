@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'dart:ui';
 
 import 'package:porra_dam/features/jornada/jornada_screen.dart';
+import 'package:porra_dam/features/resultados/resultados_screen.dart';
 
 class PantallaPrincipal extends StatefulWidget {
   const PantallaPrincipal({super.key});
@@ -17,7 +18,7 @@ class _PantallaPrincipalState extends State<PantallaPrincipal> {
   // Una pantalla por pestaña. Las tres últimas son provisionales.
   final List<Widget> _pantallas = [
     const JornadaScreen(),
-    const Center(child: Text('RESULTADOS')),
+    const ResultadosScreen(),
     const Center(child: Text('CLASIFICACIÓN')),
     const Center(child: Text('PERFIL')),
   ];
@@ -47,7 +48,7 @@ class _PantallaPrincipalState extends State<PantallaPrincipal> {
             ), // blanco casi transparente
             elevation: 0,
             selectedItemColor: const Color(0xFFFF8C32), // naranja
-            unselectedItemColor: Colors.white70,
+            unselectedItemColor: Colors.orange,
             items: const [
               BottomNavigationBarItem(
                 icon: Icon(Icons.calendar_month),
